@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrement Étudiant - Gestion Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+        
+        .form-actions { display: flex; gap: 10px; margin-top: 10px; border-top: 1px solid #eee; padding-top: 20px;}
+        
+        input[type="date"] { padding-left: 12px; } /* Moins d'espace pour l'icône de calendrier par défaut */
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" class="logo"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="liste.html"><i class="fa-solid fa-users"></i></a>
+        <a href="inscription.html" class="active"><i class="fa-solid fa-user-plus"></i></a>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h2>Enregistrement Étudiant</h2>
+        </header>
+        
+        <div class="card">
+            <h3>Informations Personnelles</h3>
+            <p style="color:#888; font-size:13px; margin-top:5px; margin-bottom:25px;">Veuillez remplir les informations de l'étudiant.</p>
+            
+            <div class="form-row-3">
+                <div class="input-group">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" placeholder="Postnom">
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" placeholder="Prénom">
+                </div>
+            </div>
+            
+            <div class="form-row-2">
+                <div class="input-group">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <select>
+                        <option value="">Sélectionner une promotion</option>
+                        <option value="A1 GSI">A1 GSI</option>
+                        <option value="A2 GEI">A2 GEI</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="date"> </div>
+            </div>
+            
+            <div class="form-actions">
+                <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Enregistrer</button>
+                <button class="btn btn-secondary"><i class="fa-solid fa-pen-to-square"></i> Modifier</button>
+                <button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Supprimer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

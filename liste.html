@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing des Étudiants - Gestion Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+        .filter-btn { background-color: #eee; border: none; padding: 10px; border-radius: 8px; color: #555; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" class="logo"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="liste.html" class="active"><i class="fa-solid fa-users"></i></a>
+        <a href="inscription.html"><i class="fa-solid fa-user-plus"></i></a>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h2>Listing des Étudiants</h2>
+            <div class="header-actions">
+                <div class="input-group" style="margin-bottom:0;">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Rechercher..." style="width:250px;">
+                </div>
+                <button class="filter-btn"><i class="fa-solid fa-filter"></i></button>
+            </div>
+        </header>
+        
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Postnom</th>
+                        <th>Prénom</th>
+                        <th>Promotion</th>
+                        <th>Date de Naissance</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ngalamulume</td><td>Nkashama</td><td>Jonathan</td><td>L2 LMD INFO</td>
+                        <td>08/01/2026</td>
+                        <td><span class="status active">Actif</span></td>
+                        <td>
+                            <button class="action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr style="background: #fcfdfe;">
+                        <td>Isokola</td><td>Efambe</td><td>Jordy</td><td>L2 LMD INFO</td>
+                        <td>08/03/2026</td>
+                        <td><span class="status pending">En attente</span></td>
+                        <td>
+                            <button class="action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mukenge</td><td>Mukenge</td><td>Pervers</td><td>L3 LMD INFO</td>
+                        <td>15/03/2026</td>
+                        <td><span class="status pending">En attente</span></td>
+                        <td>
+                            <button class="action-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="action-btn delete"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

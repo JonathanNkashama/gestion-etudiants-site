@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Gestion Étudiants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { justify-content: center; align-items: center; background: #e9eff3; padding: 0; margin: 0; }
+        .login-container { display: flex; width: 850px; height: 500px; border-radius: 20px; overflow: hidden; padding: 0; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .login-left { background: var(--bg-dark); width: 40%; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; text-align: center; }
+        .login-right { background: white; width: 60%; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+        
+        .login-left h1 { font-size: 28px; margin-bottom: 15px; }
+        .login-left p { color: #8a9ba5; font-size: 14px; margin-bottom: 30px; }
+        
+        .login-right h2 { font-size: 24px; font-weight: 600; margin-bottom: 30px; }
+        
+        .login-right input { padding-left: 45px; } /* Plus d'espace pour l'icône de connexion */
+        
+        .social-login { display: flex; justify-content: center; gap: 15px; margin-top: 25px; }
+        .social-btn { width: 40px; height: 40px; border-radius: 5px; border: 1px solid #ddd; display: flex; justify-content: center; align-items: center; color: #555; cursor: pointer; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <h1>Salut, Bienvenue !</h1>
+            <p>Pas de compte ? Créez-en un pour commencer.</p>
+            <a href="login.html" class="btn" style="border: 1px solid var(--primary); color: var(--primary);">
+                <i class="fa-solid fa-user-plus"></i> Register
+            </a>
+        </div>
+        <div class="login-right">
+            <h2>Connexion</h2>
+            
+            <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Nom d'utilisateur">
+            </div>
+            
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mot de passe">
+            </div>
+            
+            <p style="text-align: right; font-size: 12px; color: var(--text-muted); cursor: pointer; margin-top: -5px;">Mot de passe oublié ?</p>
+            
+            <br>
+            <a href="index.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-sign-in-alt"></i> Connexion
+            </a>
+            
+            <p style="text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 20px;">ou connectez-vous avec vos plateformes</p>
+            
+            <div class="social-login">
+                <a href="#" class="social-btn"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
